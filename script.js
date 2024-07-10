@@ -13,9 +13,9 @@ if (inputuser.value == "") {
   result.appendChild(item);
 
   if (regex.test(inputuser.value)){
-    item.innerHTML = "Valid US number: "+inputuser.value;
+    item.innerHTML = "有効な米国の電話番号："+inputuser.value;
   } else {
-    item.innerHTML = "Invalid US number: "+inputuser.value;
+    item.innerHTML = "無効な米国の電話番号： "+inputuser.value;
   }}
 
 checkBtn.addEventListener("click",checkNumber);

@@ -1,16 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>電話番号検証ツール</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <input id="user-input" ></input>
-  <button id="check-btn">check</button>
-<button id="clear-btn">clear</button>
-<div  id="results-div"></div>
+  <main>
     
+    <h1>電話番号検証ツール</h1>
+    <div class="phone-container">
+      <div class="phone-background">
+        <div class="phone-camera"></div>
+      </div>
+      <label for="user-input">電話番号を入力してください: </label>
+      <input maxlength="20" type="text" id="user-input" value="">
+      <div id="results-div"></div>
+      <div class="phone-footer">
+        <button class="btn-styles" id="check-btn">確認</button>
+        <button class="btn-styles" id="clear-btn">クリア</button>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+
+
 </body>
-<script src="./script.js"></script>
 </html>
